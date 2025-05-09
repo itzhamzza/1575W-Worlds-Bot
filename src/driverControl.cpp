@@ -119,7 +119,7 @@ void ladybrownMovement(){
                 ladyBrown.set_brake_mode(MOTOR_BRAKE_HOLD);
                 intake.set_brake_mode(MOTOR_BRAKE_HOLD);
             
-                ladyBrown.move_absolute(-230, 200);
+                ladyBrown.move_absolute(-234, 200);
                
                 stage++;
             }

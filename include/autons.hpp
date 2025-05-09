@@ -19,8 +19,9 @@ void measure_offsets();
 
 void blueNegAlliance5Ring();
 void blueNegAlliance5RingElims();
-void bluePos6Ring();
+void bluePos4RingElims();
+void bluePos4Ring();
 void redNegAlliance5Ring();
 void ElimsredAlliance4Ring();
-void redPos6Ring();
+void redPos4Ring();
 void redNeg6Ring();

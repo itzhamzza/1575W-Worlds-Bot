@@ -58,16 +58,24 @@ void initialize() {
 
   // Autonomous Selector using LLEMU
   ez::as::auton_selector.autons_add({
-    {"bluePos6Ring", bluePos6Ring},
-    
+    {"bluePos4RingElims", bluePos4RingElims},
     {"blueAlliance5RingElims", blueNegAlliance5RingElims},
+    {"bluePos4Ring", bluePos4Ring},
     {"blueAlliance5Ring", blueNegAlliance5Ring},
+    
+    {"redPos4Ring", redPos4Ring},
+    {"redAlliance5Ring", redNegAlliance5Ring},
+    
+    
+    
+    
+    
    
-    {"redPos6Ring", redPos6Ring},
+    
     
     {"redNeg6Ring", redNeg6Ring},
     
-    {"redAlliance5Ring", redNegAlliance5Ring},
+    
     {"ElimsredAlliance4Ring", ElimsredAlliance4Ring},
 
       {"Drive\n\nDrive forward and come back", drive_example},
@@ -267,8 +275,8 @@ void opcontrol() {
     ladybrownMovement();
    
     
-    // doinkerLeft();
-    // doinkerRight();
+    doinkerLeft();
+    doinkerRight();
 
     pros::delay(ez::util::DELAY_TIME);  // This is used for timer calculations!  Keep this ez::util::DELAY_TIME
   }
